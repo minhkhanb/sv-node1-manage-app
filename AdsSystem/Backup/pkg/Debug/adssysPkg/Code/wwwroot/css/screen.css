@@ -1,0 +1,18 @@
+﻿body {
+}
+
+.form-signin,
+.placeholders form {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.tab-content > .tab-pane {
+    padding: 10px 0 0;
+}
+.placeholders form {
+    max-width:510px;
+}
+.placeholders table td {
+    text-align: left;
+}

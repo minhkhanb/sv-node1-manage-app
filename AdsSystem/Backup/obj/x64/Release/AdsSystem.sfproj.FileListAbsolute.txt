@@ -1,0 +1,1 @@
+C:\Data Temp\Git\ads-system.node2\AdsSystem\obj\x64\Release\AdsSystem.sfprojResolveAssemblyReference.cache

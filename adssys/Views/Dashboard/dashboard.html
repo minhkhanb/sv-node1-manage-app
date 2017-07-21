@@ -1,0 +1,164 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">AdsSystem 1.0</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Change Password</a></li>
+            </ul>
+            <!--<form class="navbar-form navbar-right">
+                &lt;!&ndash;<input type="text" class="form-control" placeholder="Search...">&ndash;&gt;
+                <a href="#" class="changePassword">Change Password</a>
+            </form>-->
+
+        </div>
+
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1 class="page-header">Dashboard</h1>
+            <div>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs tablist" role="tablist">
+                    <li role="presentation" class="active"><a href="#provider" aria-controls="provider" role="tab" data-toggle="tab">Provider
+                        Management</a></li>
+                    <li role="presentation"><a href="#ads" aria-controls="ads" role="tab" data-toggle="tab">Ads
+                        Management</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="provider">
+                        <div class="row placeholders">
+                            <div class="container">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Provider</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="inputEmail3" placeholder="Provider name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Ads</label>
+                                        <div class="col-sm-10">
+                                            <select data-placeholder="Ads link" class="form-control chosen-select-deselect" tabindex="7">
+                                                <option value=""></option>
+                                                <option>Ads link 1</option>
+                                                <option>Ads link 2</option>
+                                                <option>Ads link 3</option>
+                                                <option>Ads link 4</option>
+                                                <option selected>Ads link 5</option>
+                                                <option>Ads link 6</option>
+                                                <option>Ads link 7</option>
+                                                <option>Ads link 8</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="submit" class="btn btn-default">Add</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div><!--end container-->
+                        </div>
+                        <div class="row placeholders">
+                            <h2 class="sub-header">Provider List</h2>
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Ads</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1,001</td>
+                                        <td>Lorem</td>
+                                        <td>ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1,002</td>
+                                        <td>amet</td>
+                                        <td>consectetur</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1,003</td>
+                                        <td>Integer</td>
+                                        <td>nec</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="ads">
+                        <div class="row placeholders">
+                            <div class="container">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Ads</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" placeholder="Ads link">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="submit" class="btn btn-default">Add</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div><!--end container-->
+                        </div>
+                        <div class="row placeholders">
+                            <h2 class="sub-header">Ads List</h2>
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Ads</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1,001</td>
+                                        <td>Lorem</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1,002</td>
+                                        <td>amet</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1,003</td>
+                                        <td>Integer</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

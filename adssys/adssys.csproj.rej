@@ -1,0 +1,24 @@
+diff a/adssys/adssys.csproj b/adssys/adssys.csproj	(rejected hunks)
+@@ -14,22 +14,6 @@
+     <None Remove="Views\Dashboard\dashboard.html" />
+   </ItemGroup>
+ 
+-  <ItemGroup>
+-    <Content Include="wwwroot\css\bootstrap-theme.css" />
+-    <Content Include="wwwroot\css\bootstrap-theme.css.map" />
+-    <Content Include="wwwroot\css\bootstrap.css" />
+-    <Content Include="wwwroot\css\bootstrap.css.map" />
+-    <Content Include="wwwroot\css\chosen.css" />
+-    <Content Include="wwwroot\css\screen.css" />
+-    <Content Include="wwwroot\fonts\glyphicons-halflings-regular.eot" />
+-    <Content Include="wwwroot\fonts\glyphicons-halflings-regular.svg" />
+-    <Content Include="wwwroot\fonts\glyphicons-halflings-regular.ttf" />
+-    <Content Include="wwwroot\fonts\glyphicons-halflings-regular.woff" />
+-    <Content Include="wwwroot\fonts\glyphicons-halflings-regular.woff2" />
+-    <Content Include="wwwroot\js\app.js" />
+-    <Content Include="wwwroot\js\bootstrap.js" />
+-    <Content Include="wwwroot\js\bootstrap.min.js" />
+-  </ItemGroup>
+ 
+   <ItemGroup>
+     <Folder Include="wwwroot\images\" />

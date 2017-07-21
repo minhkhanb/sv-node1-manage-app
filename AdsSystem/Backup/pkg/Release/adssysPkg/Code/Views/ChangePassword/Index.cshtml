@@ -1,0 +1,79 @@
+﻿@model List<adssys.Models.AdsSystem>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">AdsSystem 1.0</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/Dashboard">Dashboard</a></li>
+                <li>
+                    <div class="dropdown greeting">
+                        <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Welcome <span>@ViewBag.uid</span>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li><a href="/changepassword" class="btnChangePassword">Change Password</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <!--<form class="navbar-form navbar-right">
+                &lt;!&ndash;<input type="text" class="form-control" placeholder="Search...">&ndash;&gt;
+                <a href="#" class="changePassword">Change Password</a>
+            </form>-->
+
+        </div>
+
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1 class="page-header">Reset Password Admin</h1>
+            <div class="row">
+                <div class="container">
+                    <form class="form-horizontal" method="post" action="ads/changedPassword">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">User</label>
+                            <div class="col-sm-10">
+                                <input type="text" readonly class="form-control user" name="username" placeholder="@ViewBag.uid" value="@ViewBag.uid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Current Password</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control currentPassword" name="currentPassword" placeholder="Current Password...">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">New Password</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control newPassword" name="newPassword" placeholder="New Password...">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default btnChange">Change</button>
+                            </div>
+                        </div>
+                    </form>
+                </div><!--end container-->
+            </div>
+        </div>
+    </div>
+</div>
